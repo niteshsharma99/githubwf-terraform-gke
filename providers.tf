@@ -2,11 +2,11 @@ provider "google" {
   project = var.project_id
   region  = var.region
   zone    = var.zone
-  credentials = file("gcp-credentials.json")
+#  credentials = file("gcp-credentials.json")
 }
 
 provider "kubernetes" {
-  config_path    = "~/.kube/config"
+#  config_path    = "~/.kube/config"
 #  config_context = "my-cluster"
 }
 
