@@ -6,7 +6,7 @@ provider "google" {
 }
 
 provider "kubernetes" {
-#  config_path    = "~/.kube/config"
+   config_path    = ${{ secrets.KUBE_CONFIG }}
 #  config_context = "my-cluster"
 }
 
